@@ -44,7 +44,7 @@ class Dog
     name: row[1]
     breed: row[2]
    }
-    Dog.new(id, name, breed)
+    Dog.new(attributes_hash)
   end 
   
   def self.find_by_name(name)
