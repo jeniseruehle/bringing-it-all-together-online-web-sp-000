@@ -54,6 +54,10 @@ class Dog
     end.first
   end 
   
+  def self.find_or_create_by(name:, breed:)
+    
+  end 
+  
   def self.find_by_name(name)
     sql = "SELECT * FROM dogs WHERE name = ?"
     DB[:conn].execute(sql, name).map do |row|
